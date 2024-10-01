@@ -1,0 +1,206 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+:root{
+    --main-color:#00eeff;
+    --text-color:#ffffff;
+    --bg-color-01:#1f242d;
+    --mbg-color-02:#323946;
+    --color-00:#00001a;
+
+    --color-01:#999999;
+    --color-02:#009539;
+    --color-03:#7950f2;
+    --color-04:#c00000;
+    --color-05:#232323;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+
+}
+
+html{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+
+body {
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    background-color: var(--color-01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: solid 6px var(--color-02);
+}
+
+   /* Tudo que começa com (Ponto) é uma class*/
+.logo {
+    /* inicio Mexendo no Portfolio*/
+    font-size: 1.7rem;
+    color: var(--color-02);
+    font-weight: 600;
+    cursor: default;
+   /* final Mexendo no Portfolio*/
+}
+
+.nav a {
+    font-size: 1.2rem;
+    color: var(--mbg-color-02)
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+    border: solid 1px var(--main-color-o1);
+}
+
+.nav a:hover{
+    color: #c00000;
+}
+
+section {
+    min-right: 100vh;
+    padding: 5rem 5rem  2rem;
+    border: solid 1px var(--color-02)
+
+}
+
+span {
+ color: rgb(12, 12, 56);
+   
+}
+
+.home, .about{
+display: flex ;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+
+.home-img{
+    
+    border-right: solid 0.2rem var(--color-02);
+    border-bottom: solid 0.2rem var(--color-02);
+    
+}
+
+
+
+
+
+
+
+
+
+
+.about-imag{
+    border-right: solid 0.4rem var(--color-02);
+    border-bottom: solid 0.3rem var(--color-02);
+    border-image:linear-gradient(135deg, transparent %, var(--color-02))
+}
+
+
+
+.home-img img, .about-img img
+{width: 100%;
+
+}
+
+.about{
+    background-color: var(--color-04);
+}
+.home-content, .about-content{
+    width: 45%;
+}
+
+.home-content h1, .about-content h1{
+    font-weight: 700;
+    line-height: 1,3;
+    font-size: 1.7rem;
+}
+
+.home-content h3, .about-content h3{
+    margin-top: 1.2rem;
+    text-align: justify;
+}
+
+.service h2,
+.portfolio h2,
+.contact{
+    font-size:2.2rem ;
+    margin-bottom: 2rem;
+    text-align: fles;
+}
+
+.service-container{
+    display: fles;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.service-box{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+min-height: 25rem;
+margin-bottom: 1rem;
+
+}
+
+
+
+.service-container .service-box{
+    padding: 2rem 1rem 5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: solid 0.15rem var(--bg-color-01);
+background-color:var(--mbg-color-02);
+transition: 0.5s ease;
+}
+
+.service-container .service-box:hover{
+     border-color:#00eeff ;
+     transform: scale(1.03);
+}
+
+
+.service-box i {
+    font-size: 4.3rem;
+    color: var(--main-color);
+
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+}
+
+.service-box p{
+
+    margin: 0.5rem;
+    letter-spacing: 0.1rem;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
